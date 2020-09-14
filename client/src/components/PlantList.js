@@ -18,7 +18,7 @@ constructor(){
     .then(res => {
       console.log(res.data)
       this.setState({
-        plants: [...res.data]
+        plants: [...res.data.plantsData]
       })
     })
   }
